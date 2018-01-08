@@ -260,7 +260,7 @@ class LoginManagerTests: KIFTestCase {
         EarlGrey.select(elementWithMatcher: grey_accessibilityID("websiteField")).perform(grey_tap())
         waitForMatcher(name: "Open & Fill")
         
-        tester().wait(forTimeInterval: 5)
+        tester().wait(forTimeInterval: 10)
         tester().waitForViewWithAccessibilityValue("a0.com/")
     }
     
@@ -292,7 +292,7 @@ class LoginManagerTests: KIFTestCase {
         EarlGrey.select(elementWithMatcher: grey_accessibilityID("websiteField")).perform(grey_tap())
         waitForMatcher(name: "Open & Fill")
         
-        tester().wait(forTimeInterval: 2)
+        tester().wait(forTimeInterval: 10)
         tester().waitForViewWithAccessibilityValue("a0.com/")
     }
     
